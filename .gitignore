@@ -502,6 +502,7 @@ vendor/
 # Fortran module files
 *.mod
 *.smod
+!go.mod
 
 # Compiled Static libraries
 *.lai
