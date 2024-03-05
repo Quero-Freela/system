@@ -1,0 +1,3 @@
+[submodule "php-go"]
+	path = php-go
+	url = https://github.com/schivei/php-go

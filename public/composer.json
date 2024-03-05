@@ -1,0 +1,17 @@
+{
+    "name": "querofreela/public",
+    "autoload": {
+        "psr-4": {
+            "QueroFreela\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Elton Schivei Costa",
+            "email": "costa@elton.schivei.nom.br"
+        }
+    ],
+    "require": {
+    },
+  "minimum-stability": "dev"
+}
