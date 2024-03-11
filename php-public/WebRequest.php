@@ -15,8 +15,9 @@ class WebRequest {
         $this->method = $_SERVER['REQUEST_METHOD'];
         $this->url = $_SERVER['REQUEST_URI'];
         $this->schema = $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-        $this->headers = getallheaders();
+        $this->headers = getallheaders() ?? [];
         $this->headers['REMOTE_ADDR'] = $_SERVER['REMOTE_ADDR'];
+        $this->headers['REQUEST_ID'] = uniqid("", true);
         $this->body = file_get_contents('php://input');
         $this->form = $_POST;
         $this->files = $_FILES;

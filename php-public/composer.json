@@ -1,5 +1,5 @@
 {
-    "name": "querofreela/public",
+    "name": "querofreela/publish",
     "autoload": {
         "psr-4": {
             "QueroFreela\\": "./"
